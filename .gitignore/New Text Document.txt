@@ -1,0 +1,15 @@
+# Ignore Python cache and temporary files
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.pt
+*.zip
+*.avi
+*.rar
+
+# Ignore large training-related folders
+DATASET/videos/
+DATASET/test_videos/
+Logs/
+models/
