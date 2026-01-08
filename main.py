@@ -36,7 +36,7 @@ actions = np.array([
     'wt_is_csr'
 ])
 
-# 2. SET BASE DIRECTORY (Windows path format) - UPDATED to your dataset
+# 2. SET BASE DIRECTORY (Windows path format) - UPDATE to your dataset
 base_dir = r"C:\Users\HP\Desktop\MAJOR PROJECT\DATASET"
 
 # IMPORTANT: Videos are directly in dataset folder (e.g., DATASET/wt_is_ai/*.mp4)
@@ -45,7 +45,7 @@ VIDEO_PATH = base_dir  # Videos are directly in dataset/<action>/
 # 3. TRAINING PARAMETERS (kept as original)
 no_sequences = 50           # Number of videos per action (expected)
 sequence_length = 30        # Frames per video (this code extracts 30 frames)
-training_epochs = 200       # Keep as your friend's original
+training_epochs = 200       # Keep as it is
 test_split = 0.10           # 10% for testing
 
 # ============================================================================
@@ -507,7 +507,7 @@ if __name__ == "__main__":
     # Step 1: Create folder structure
     create_folder_structure()
     
-    # Pause to let user add videos (keeps same interactive prompt as friend)
+    # Pause to let user add videos
     print("\n" + "="*60)
     print("IMPORTANT: Add your training videos now!")
     print("="*60)
